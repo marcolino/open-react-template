@@ -1,6 +1,7 @@
 image: node:12.13.1 # change to match your node version
 
 cache:
+  key: "$CI_COMMIT_REF_SLUG"
   paths:
     - node_modules/
 
