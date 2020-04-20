@@ -23,3 +23,4 @@ pages:
       - public # GitLab pages serve from a 'public' directory
   only:
     - master # run on master branch
+    
