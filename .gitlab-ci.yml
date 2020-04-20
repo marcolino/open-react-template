@@ -5,7 +5,7 @@ cache:
     - node_modules/
 
 before_script:
-  - npm install
+  - yarn install
 
 test:
   stage: test
@@ -23,4 +23,3 @@ pages:
       - public # GitLab pages serve from a 'public' directory
   only:
     - master # run on master branch
-    
