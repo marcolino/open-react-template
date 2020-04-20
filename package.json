@@ -2,6 +2,12 @@
   "name": "open-react-template",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --watchAll",
+    "eject": "#react-scripts eject"
+  },
   "dependencies": {
     "classnames": "^2.2.6",
     "lodash": "^4.17.15",
@@ -15,12 +21,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/cruip/open-react-template.git"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --watchAll",
-    "eject": "#react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
