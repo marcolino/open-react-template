@@ -1,21 +1,21 @@
 image: node:12.13.1
 
+test:
+  stage: test
+  script:
+    - CI=true yarn test || true
+
 pages:
   cache:
     paths:
     - node_modules/
  
-  stage: test
-  script:
-    - CI=true yarn test || true
-
   stage: deploy
   script:
   - yarn install
   - yarn build
   - rm -rf public
   - mv build public
-
   artifacts:
     paths:
     - public # mandatory, other folder won't work
