@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "config": "yarn config set ignore-engines true",
+    "setup": "yarn config set ignore-engines true",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --watchAll"
+    "test": "node scripts/test.js --watchAll",
+    "pub-local": "node scripts/build.js && cp -a build/* /var/www/html/open-react-template/"
   },
   "dependencies": {
     "@babel/core": "7.9.0",
@@ -141,5 +142,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "custom": {
+    "GA_CODE": "UA-3790283-4"
   }
 }
