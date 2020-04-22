@@ -146,5 +146,7 @@
   "custom": {
     "GA_CODE": "UA-3790283-4"
   },
-  "homepage": "/open-react-template"
+  "homepage-localhost": "/open-react-template",
+  "homepage-netlify": "/",
+  "homepage": "/"
 }
