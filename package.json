@@ -147,6 +147,7 @@
     "GA_CODE": "UA-3790283-4"
   },
   "homepage-localhost": "/open-react-template",
+  "homepage-gitlab-pages": "/open-react-template",
   "homepage-netlify": "/",
-  "homepage": "/"
+  "homepage": "/open-react-template"
 }
