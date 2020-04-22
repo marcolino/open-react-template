@@ -1,9 +1,9 @@
 image: node:10
 
-#test:
-#  stage: test
-#  script:
-#    - CI=true yarn test || true
+test:
+  stage: test
+  script:
+    - CI=true yarn test || true
 
 pages:
   cache:
