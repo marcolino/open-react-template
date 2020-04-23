@@ -3,12 +3,12 @@ image: node:12
 variables:
   REACT_APP_GA_CODE: "UA-3790283-4"
 
-test:
-  stage: test
-  script:
-    - rm -rf node_modules
-    - yarn
-    - CI=true yarn test || true
+#test:
+#  stage: test
+#  script:
+#    - rm -rf node_modules
+#    - yarn
+#    - CI=true yarn test || true
 
 pages:
   cache:
