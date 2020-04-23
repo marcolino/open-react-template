@@ -150,5 +150,5 @@
   "homepage-gitlab-pages": "/open-react-template",
   "homepage-netlify": "/",
   "homepage-any": ".",
-  "homepage": "http://localhost/open-react-template/"
+  "homepage-NO": "http://localhost/open-react-template/"
 }
