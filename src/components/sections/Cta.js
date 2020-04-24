@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
+import { useTranslation } from 'react-i18next';
 import Input from '../elements/Input';
 
 const propTypes = {
@@ -26,6 +27,8 @@ const Cta = ({
   ...props
 }) => {
 
+  const { t/*, i18n*/ } = useTranslation();
+  
   const outerClasses = classNames(
     'cta section center-content-mobile reveal-from-bottom',
     topOuterDivider && 'has-top-divider',
@@ -57,7 +60,7 @@ const Cta = ({
             </h3>
           </div>
           <div className="cta-action">
-            <Input id="newsletter" type="email" label="Subscribe" labelHidden hasIcon="right" placeholder="Your best email">
+            <Input id="newsletter" type="email" label="Subscribe" labelHidden hasIcon="left" placeholder={t('subscribe placeholder')}>
               <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9 5H1c-.6 0-1 .4-1 1s.4 1 1 1h8v5l7-6-7-6v5z" fill="#376DF9" />
               </svg>
