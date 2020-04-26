@@ -2,7 +2,9 @@ import React, { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import Logo from './partials/Logo';
+import LanguageSelector from '../elements/LanguageSelector';
 
 const propTypes = {
   navPosition: PropTypes.string,
@@ -30,6 +32,8 @@ const Header = ({
   ...props
 }) => {
 
+  const { t } = useTranslation();
+  
   const [isActive, setIsactive] = useState(false);
 
   const nav = useRef(null);
@@ -106,23 +110,35 @@ const Header = ({
                     isActive && 'is-active'
                   )}>
                 <div className="header-nav-inner">
+
                   <ul className={
                     classNames(
                       'list-reset text-xs',
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>Documentation</Link>
+                      <LanguageSelector />
                     </li>
                   </ul>
-                  {!hideSignin &&
-                    <ul
-                      className="list-reset header-nav-right"
-                    >
-                      <li>
-                        <Link to="#0" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Sign up</Link>
-                      </li>
-                    </ul>}
+
+                  <ul className={
+                    classNames(
+                      'list-reset text-xs',
+                      navPosition && `header-nav-${navPosition}`
+                    )}>
+                    <li>
+                      <Link to="#0" onClick={closeMenu}>{t('Documentation')}</Link>
+                    </li>
+                  </ul>
+
+                  {!hideSignin && <ul
+                    className="list-reset header-nav-right"
+                  >
+                    <li>
+                      <Link to="#0" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>{t('Sign up')}</Link>
+                    </li>
+                  </ul>}
+
                 </div>
               </nav>
             </>}

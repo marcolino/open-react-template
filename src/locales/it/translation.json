@@ -1,8 +1,29 @@
 {
-  "title": "Welcome to react using react-i18next",
-  "description": {
-    "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
-    "part2": "Switch language between english and german using buttons above."
-  },
-  "subscribe placeholder": "La tua migliore email"
+  "About us": "🤖 Su di noi",
+  "All rights reserved": "Tutti i diritti riservati",
+  "Build up the whole picture": "Crea il quadro completo",
+  "Contact": "Contact",
+  "Customer testimonials": "Testimonianze dei clienti",
+  "Data-driven insights": "Informazioni basate sui dati",
+  "Documentation": "Documentazione",
+  "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidata.": "🤖 ",
+  "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.": "🤖 ",
+  "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.": "🤖 ",
+  "FAQ's": "D&R",
+  "FeaturesSplit SectionHeader paragraph": "Sulle strade scorrono meno auto e gli animali, da un po' di tempo, si riappropriano di spazi di territorio. In un filmato – recapitato da un utente al sito del Nuovo Cacciatore Piemontese – si vede chiaramente un lupo che corre davanti ad una macchina lungo la strada provinciale che arriva nel comune di Perrero, in Val Germanasca. Il grande predatore, a dun certo punto, per «dribblare» l'auto balza fuori strada e si allontana in senso contrario, dimostrando ancora una volta la sua straordinaria intelligenza. Nell'altro filmato (girato dal sindaco di Balme Gianni Castagneri) si vede invece un gruppo di stambecchi all'altezza di località Albaron. Uno spettacolo suggestivo che, oramai, si ripete tutti gli anni quando grossi maschi dalle lunghe corna scendono dalle vette per brucare i germogli freschi e non disdegnano nemmeno il sale che si deposita sulla strada provinciale.",
+  "FeaturesSplit SectionHeader title": "Un flusso che semplicemente funziona!",
+  "For previewing layouts and visual?": "Vuoi un'anteprima di schema e immagini?",
+  "Get started": "Inizia",
+  "Landing template for": "Modello per pagine di landing per",
+  "Lightning fast workflow": "Flusso di lavoro rapidissimo",
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.": "🤖 ",
+  "Made by": "Da",
+  "Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever": "Questo modello di pagine di landing funziona su tutti i dispositivi, per cui è sufficiente impostarlo una sola volta, e si otterranno sempre ottimi risultati",
+  "Robust Workflow": "Un robusto flusso di lavoro",
+  "Sign up": "Registrati",
+  "startups": "startups",
+  "subscribe placeholder": "la tua migliore email",
+  "Support": "Supporto",
+  "View on Github": "Guarda su Github",
+  "Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.": "Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare."
 }

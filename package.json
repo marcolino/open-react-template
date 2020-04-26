@@ -5,6 +5,8 @@
   "scripts": {
     "setup": "yarn config set ignore-engines true; export REACT_APP_GA_CODE='UA-3790283-4'",
     "start": "node scripts/start.js",
+    "build:translations-parse": "i18next 'src/**/*.js' --config 'config/i18next-parser.config.js'",
+    "build:auto-translate": "node scripts/auto-translate.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --watchAll",
     "pub-local": "node scripts/build.js && cp -a build/* /var/www/html/open-react-template/"
@@ -58,6 +60,7 @@
     "react-app-polyfill": "^1.0.6",
     "react-dev-utils": "^10.2.1",
     "react-dom": "^16.13.1",
+    "react-flags-select": "^1.1.12",
     "react-ga": "^2.7.0",
     "react-i18next": "^11.3.5",
     "react-router-dom": "^5.1.2",
@@ -93,7 +96,9 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "translate-json-object": "^2.3.6"
+  },
   "jest": {
     "roots": [
       "<rootDir>/src"
@@ -147,12 +152,15 @@
       "react-app"
     ]
   },
-  "custom": {
-    "GA_CODE": "UA-3790283-4"
-  },
   "homepage-localhost": "/open-react-template",
   "homepage-gitlab-pages": "/open-react-template",
   "homepage-netlify": "/",
   "homepage-any": ".",
-  "homepage": "/open-react-template"
+  "homepage": "/open-react-template",
+  "custom": {
+    "CompanyName": "Sistemi Solari",
+    "CompanyWebSite": "https://marcosolari.gitlab.io/open-react-template",
+    "SourceWebSite": "https://gitlab.com/marcosolari/open-react-template/",
+    "GoogleAnalyticsCode": "UA-3790283-4"
+  }
 }

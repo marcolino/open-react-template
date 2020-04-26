@@ -1,8 +1,29 @@
 {
-  "title": "Welcome to react using react-i18next",
-  "description": {
-    "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
-    "part2": "Switch language between english and german using buttons above."
-  },
-  "subscribe placeholder": "Your best email"
+  "About us": "About us",
+  "All rights reserved": "All rights reserved",
+  "Build up the whole picture": "Build up the whole picture",
+  "Contact": "Contact",
+  "Customer testimonials": "Customer testimonials",
+  "Data-driven insights": "Data-driven insights",
+  "Documentation": "Documentation",
+  "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidata.": "",
+  "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.": "",
+  "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.": "",
+  "FAQ's": "FAQ's",
+  "FeaturesSplit SectionHeader paragraph": "FeaturesSplit SectionHeader paragraph",
+  "FeaturesSplit SectionHeader title": "FeaturesSplit SectionHeader title",
+  "For previewing layouts and visual?": "For previewing layouts and visual?",
+  "Get started": "Get started",
+  "Landing template for": "Landing template for",
+  "Lightning fast workflow": "Lightning fast workflow",
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.": "",
+  "Made by": "Made by",
+  "Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever": "Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.",
+  "Robust Workflow": "Robust Workflow",
+  "Sign up": "Sign up",
+  "startups": "startups",
+  "subscribe placeholder": "subscribe placeholder",
+  "Support": "Support",
+  "View on Github": "View on Github",
+  "Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.": "Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare."
 }

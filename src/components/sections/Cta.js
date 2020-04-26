@@ -27,7 +27,7 @@ const Cta = ({
   ...props
 }) => {
 
-  const { t/*, i18n*/ } = useTranslation();
+  const { t } = useTranslation();
   
   const outerClasses = classNames(
     'cta section center-content-mobile reveal-from-bottom',
@@ -56,7 +56,7 @@ const Cta = ({
         >
           <div className="cta-slogan">
             <h3 className="m-0">
-              For previewing layouts and visual?
+              {t('For previewing layouts and visual?')}
             </h3>
           </div>
           <div className="cta-action">

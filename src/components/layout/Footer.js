@@ -4,6 +4,8 @@ import classNames from 'classnames';
 import Logo from './partials/Logo';
 import FooterNav from './partials/FooterNav';
 import FooterSocial from './partials/FooterSocial';
+import { useTranslation } from 'react-i18next';
+import pkg from '../../../package.json';
 
 const propTypes = {
   topOuterDivider: PropTypes.bool,
@@ -22,6 +24,8 @@ const Footer = ({
   ...props
 }) => {
 
+  const { t } = useTranslation();
+  
   const classes = classNames(
     'site-footer center-content-mobile',
     topOuterDivider && 'has-top-divider',
@@ -45,7 +49,7 @@ const Footer = ({
           </div>
           <div className="footer-bottom space-between text-xxs invert-order-desktop">
             <FooterNav />
-            <div className="footer-copyright">Made by <a href="https://cruip.com">Cruip</a>. All right reserved</div>
+            <div className="footer-copyright">{t('Made by')} <a href={pkg.custom.CompanyWebSite}>{pkg.custom.CompanyName}</a>. {t('All rights reserved')}</div>
           </div>
         </div>
       </div>

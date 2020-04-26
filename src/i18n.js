@@ -3,6 +3,9 @@ import { initReactI18next } from "react-i18next";
 //import Backend from 'i18next-http-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
+
+import resources from './i18n-resources';
+/*
 import en from './locales/en/translation.json';
 import it from './locales/it/translation.json';
 
@@ -11,6 +14,7 @@ const resources = {
   en: { translation: en },
   it: { translation: it },
 };
+*/
 
 const languageDetectionOptions = {
   // order and from where user language should be detected
