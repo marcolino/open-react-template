@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const webpack = require('webpack');
 const resolve = require('resolve');
-const I18nextPrePlugin = require("./i18next-pre-webpack-plugin");
+const I18nextPreWebpackPlugin = require("./i18next-pre-webpack-plugin");
 const PnpWebpackPlugin = require('pnp-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
@@ -510,9 +510,6 @@ module.exports = function(webpackEnv) {
       ],
     },
     plugins: [
-      // Adds support to generate translation resources from languages array
-      //new I18nextPrePlugin({ path: 'src/i18n-resources.js' }),
-
       // Generates an `index.html` file with the <script> injected.
       new HtmlWebpackPlugin(
         Object.assign(
@@ -654,6 +651,9 @@ module.exports = function(webpackEnv) {
           // The formatter is invoked directly in WebpackDevServerUtils during development
           formatter: isEnvProduction ? typescriptFormatter : undefined,
         }),
+        // Adds support to generate translation resources from languages array
+        new I18nextPreWebpackPlugin({ path: 'src/i18n-imports.js' }),
+
     ].filter(Boolean),
     // Some libraries import Node modules but don't use them in the browser.
     // Tell webpack to provide empty mocks for them so importing them works.

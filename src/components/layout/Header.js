@@ -4,7 +4,12 @@ import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Logo from './partials/Logo';
-import LanguageSelector from '../elements/LanguageSelector';
+//import LanguageSelector from '../elements/LanguageSelector';
+import ReactLanguagesSelect from 'react-languages-select';
+import {languages} from '../../languages';
+
+console.warn('languages:', languages);
+
 
 const propTypes = {
   navPosition: PropTypes.string,
@@ -32,7 +37,10 @@ const Header = ({
   ...props
 }) => {
 
-  const { t } = useTranslation();
+
+  console.log('languages:', languages);
+
+  const { t, i18n } = useTranslation();
   
   const [isActive, setIsactive] = useState(false);
 
@@ -50,6 +58,11 @@ const Header = ({
     };
   });  
 
+  const changeLanguage = (languageCode) => {
+    i18n.changeLanguage(languageCode);
+    closeMenu();
+  }
+  
   const openMenu = () => {
     document.body.classList.add('off-nav-is-active');
     nav.current.style.maxHeight = nav.current.scrollHeight + 'px';
@@ -116,8 +129,17 @@ const Header = ({
                       'list-reset text-xs',
                       navPosition && `header-nav-${navPosition}`
                     )}>
-                    <li>
+                    {/*<li>
                       <LanguageSelector />
+                    </li>
+                    */}
+                    <li>
+                      <ReactLanguagesSelect
+                        onSelect={changeLanguage}
+                        className="menu-languages"
+                        placeholder="Choose Language"
+                        languages={languages} 
+                      />
                     </li>
                   </ul>
 
