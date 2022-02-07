@@ -12,6 +12,7 @@ const LanguageSelector = () => {
 
   return (
     <div onChange={changeLanguage}>
+      <br />
       <input type="radio" value="en" name="language" defaultChecked /> English
       <input type="radio" value="zh" name="language"/> 繁體中文
       <input type="radio" value="it" name="language" /> Italiano

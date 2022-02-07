@@ -8,7 +8,7 @@ import it from './locales/it/translation.json';
 import es from './locales/es/translation.json';
 import fr from './locales/fr/translation.json';
 import de from './locales/de/translation.json';
-import zh from './locales/zh/translation.json';
+//import zh from './locales/zh/translation.json';
 import ar from './locales/ar/translation.json';
 
 // the translations
@@ -18,6 +18,6 @@ export default {
   es: { translation: es },
   fr: { translation: fr },
   de: { translation: de },
-  zh: { translation: zh },
+  //zh: { translation: zh },
   ar: { translation: ar },
 };

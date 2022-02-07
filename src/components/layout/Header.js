@@ -4,12 +4,9 @@ import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Logo from './partials/Logo';
-//import LanguageSelector from '../elements/LanguageSelector';
-import ReactLanguagesSelect from 'react-languages-select';
 import {languages} from '../../languages';
 
 console.warn('languages:', languages);
-
 
 const propTypes = {
   navPosition: PropTypes.string,
@@ -37,15 +34,14 @@ const Header = ({
   ...props
 }) => {
 
-
-  console.log('languages:', languages);
-
-  const { t, i18n } = useTranslation();
-  
+  const { t, i18n } = useTranslation(); 
   const [isActive, setIsactive] = useState(false);
-
+  const [selectedLanguage, setSelectedLanguage] = useState('IT');
   const nav = useRef(null);
   const hamburger = useRef(null);
+  
+  console.log('languages:', languages);
+  console.log('language:', i18n.language.substring(3,5).toUpperCase());
 
   useEffect(() => {
     isActive && openMenu();
@@ -60,6 +56,7 @@ const Header = ({
 
   const changeLanguage = (languageCode) => {
     i18n.changeLanguage(languageCode);
+    setSelectedLanguage(languageCode);
     closeMenu();
   }
   
@@ -124,19 +121,22 @@ const Header = ({
                   )}>
                 <div className="header-nav-inner">
 
-
                   <ul className={
                     classNames(
-                      'list-reset text-xs',
+                      'text-xs',
                       navPosition && `header-nav-${navPosition}`
                     )}>
-                    {/*<li>
-                      <LanguageSelector />
-                    </li>
-                    */}
-                    <li>
-                      <ReactLanguagesSelect onSelect={changeLanguage} className="ul-block" placeholder="Language" names="local" languages={languages} />
-                    </li>
+                    <div className="language-select">
+                      <select
+                        className="custom-select"
+                        value={selectedLanguage}
+                        onChange={e => changeLanguage(e.target.value)}
+                      >
+                        {languages.map(l => {
+                          return <option key={l.code} value={l.code} className="language-select-option">{l.flag} {l.desc}</option>
+                        })}
+                      </select>
+                    </div>
                   </ul>
 
                   <ul className={
