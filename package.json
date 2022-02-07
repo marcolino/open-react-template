@@ -2,6 +2,7 @@
   "name": "open-react-template",
   "version": "0.1.0",
   "private": true,
+  "engines": { "node": "12.16.1", "npm": "6.14.4" },
   "scripts": {
     "setup": "yarn config set ignore-engines true; export REACT_APP_GA_CODE='UA-3790283-4'",
     "start": "node scripts/start.js",

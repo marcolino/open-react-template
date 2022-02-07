@@ -1,4 +1,4 @@
-# React landing page template
+# Free React landing page template
 
 ![Open React template preview](https://user-images.githubusercontent.com/2683512/78789364-545e7100-79ad-11ea-9e3c-9528c99cda8e.png)
 
@@ -11,6 +11,12 @@ Created and maintained with ❤️ by [Cruip.com](https://cruip.com).
 ## Live demo
 
 Check the live demo here 👉️ [https://open.cruip.com/](https://open.cruip.com/)
+
+## Open PRO
+
+[![Open Pro](https://user-images.githubusercontent.com/2683512/151177673-e56ade57-c98d-4c37-b315-d313bd14bb53.png)](https://cruip.com/)
+
+*The premium template is built on-the-top of [Tailwind CSS](https://tailwindcss.com/), and React components have been re-built from scratch.* 
 
 ## Table of contents
 
@@ -40,6 +46,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### Available Scripts
 
 In the project directory, you can run:
+
+#### `npm install`
+To install the dependencies package.
 
 #### `npm start`
 

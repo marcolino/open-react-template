@@ -20,10 +20,7 @@
 // Used in _mixins.scss [@mixin font-family] --------------------------
 // --------------------------------------------------------------------
 @function get-font-family($elem) {
-	@if type-of($font--family) == string {
-	  @return map-get($font--family, $elem);
-	}
-	@return ""
+	@return map-get($font--family, $elem);
 }
 
 // --------------------------------------------------------------------
