@@ -5,7 +5,7 @@
   "engines": { "node": "12.16.1", "npm": "6.14.4" },
   "scripts": {
     "setup": "yarn config set ignore-engines true; export REACT_APP_GA_CODE='UA-3790283-4'",
-    "start": "cd src && node index.js",
+    "start": "node scripts/start.js",
     "start-dev": "node scripts/start.js",
     "build:translations-parse": "i18next 'src/**/*.js' --config 'config/i18next-parser.config.js'",
     "build:auto-translate": "node scripts/auto-translate.js",
@@ -156,11 +156,11 @@
       "react-app"
     ]
   },
-  "homepage-localhost": "/open-react-template",
-  "homepage-gitlab-pages": "/open-react-template",
-  "homepage-netlify": "/",
-  "homepage-any": ".",
-  "homepage": "/open-react-template",
+  "_homepage-localhost": "/open-react-template",
+  "_homepage-gitlab-pages": "/open-react-template",
+  "_homepage-netlify": "/",
+  "_homepage-any": ".",
+  "_homepage": "/open-react-template",
   "custom": {
     "CompanyName": "Sistemi Solari",
     "CompanyWebSite": "https://marcosolari.gitlab.io/open-react-template",
