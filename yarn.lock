@@ -8884,10 +8884,10 @@ react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-languages-select@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/react-languages-select/-/react-languages-select-1.0.2.tgz#2911aca2b8c0e27163a0f9cb6afee4dad64562a9"
-  integrity sha512-54uhtAK0sHETFmc4cGfOgIuJLuJG/GRG9LZ850CgWYTKwkgjW7fynBVy7ZEM2NmemlqVtzdkKhkbwFeG58cmOg==
+react-languages-select@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/react-languages-select/-/react-languages-select-1.0.10.tgz#a83edb216f7130438a22f51577a59ff37d55290a"
+  integrity sha512-GYhpy2/XX8GqQ5GgA0T0p63/d6SH4lXSPx88Tiy+6WyXw5jyDnGXfHiNqEPGPs7u4a1R8ZASb9DOgQtSmbGPQA==
   dependencies:
     prop-types "^15.5.8"
 

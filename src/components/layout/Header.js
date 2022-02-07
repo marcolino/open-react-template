@@ -124,6 +124,7 @@ const Header = ({
                   )}>
                 <div className="header-nav-inner">
 
+
                   <ul className={
                     classNames(
                       'list-reset text-xs',
@@ -134,12 +135,7 @@ const Header = ({
                     </li>
                     */}
                     <li>
-                      <ReactLanguagesSelect
-                        onSelect={changeLanguage}
-                        className="menu-languages"
-                        placeholder="Choose Language"
-                        languages={languages} 
-                      />
+                      <ReactLanguagesSelect onSelect={changeLanguage} className="ul-block" placeholder="Language" names="local" languages={languages} />
                     </li>
                   </ul>
 
